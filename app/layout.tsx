@@ -4,12 +4,7 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton
+  ClerkProvider
 } from '@clerk/nextjs'
 
 const IBMPlex = IBM_Plex_Sans({ 
@@ -34,12 +29,6 @@ export default function RootLayout({
     }}>
       <html lang="en">
       <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
-      {/* <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn> */}
         {children}
       </body>
     </html>
